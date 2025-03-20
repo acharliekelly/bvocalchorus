@@ -11,10 +11,12 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar" tabindex="0">
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-md bg-secondary text-white fixed-top">
       <div class="container-fluid">
-        <img class="logo" src="images/bvocal2_sm.png">
-        <span class="navbar-brand mb-0 h1" href="#">BVOCAL</span>
+        <a href="#scrollspyHome">
+          <img class="logo" alt="Logo" src="images/bvocal2_lg.png">
+        </a>
+        <span class="navbar-brand mb-0 h1">BVOCAL</span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,15 +42,23 @@
       </div>
     </nav>
   </header>
-  <main>
+  <main class="inner cover">
     <section id="scrollspyHome">
-      <h2>Boston Voices of Community and Labor</h2>
-      <p>Social justice movements are stronger &dash; <span class="text-primary">more joyful</span>, <span class="text-secondary">more resilient</span>, and <span class="text-success">more powerful</span> &dash; when they sing.</p>
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark container-fluid">
+        <img class="col-md-6 banner-logo" src="images/bvocal2_lg.png" alt="Logo">
+        <div class="col-md-6 px-1">
+          <div class="h1">Boston Voices of Community and Labor</div>
+          <p>Social justice movements are stronger &dash; more joyful, more resilient, 
+            and more powerful &dash; when they sing.</p>
+        </div>
+        
+      </div>
+      
+      <div class="mt-4">
+        <strong>BVOCAL:</strong> A new protest chorus committed to uplifting our rallies, marches, picket lines, and civil disobedience with singing &dash; wherever people gather for justice.
 
-      <strong>BVOCAL:</strong> A new protest chorus committed to uplifting our rallies, marches, picket lines, and civil disobedience with singing &dash; wherever people gather for justince.
-
-
-      <p>More <a href="info.html">information</a></p>
+      </div>
+      
 
     </section>
     <section id="scrollspyAbout">
@@ -66,7 +76,61 @@
     </section>
     <section id="scrollspyEvents">
       <h2>Upcoming Events</h2>
-      <p>[upcoming events will go here]</p>
+      <br>
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Labor</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Boston Teachers Union</a>
+              </h3>
+              <div class="mb-1 text-muted">March 19, 5-7pm</div>
+              <p class="card-text mb-auto">
+                Support members of the Boston Teachers Union in their contract negotiations (during the Mayor's State of the City).<br>
+                <strong>Location:</strong> Meet at 175 Ipswich St. right outside Boston Arts Academy (near Fenway)
+                <br>
+                We will sing at approximately 5:30 as they transition to a press conference; other details to follow.
+                The BTU is sensitive to the fact that Mayor Wu has been a champion on many progressive issues, as you'll see from the rally announcement below. 
+                One priority in negotiations is raising pay for para educators: their starting pre-tax pay is $2500/month while the average rent in Boston is $2600/month.
+              </p>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" src="images/placeholder.png" width="250" alt="Card image cap">
+          </div>
+
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Rally</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Boston Common</a>
+              </h3>
+              <div class="mb-1 text-muted">April 5, 12-2pm</div>
+              <p class="card-text mb-auto">
+                Coalition including Indivisible MA, 50501, the Women's March, and many more<br>
+                <strong>Location:</strong> Boston Common<br>
+                Organizers are aiming for a major showing of tens of thousands to protest the actions of the Trump administration. Details are still being worked out.
+              </p>
+            </div>
+            <img class="card-img-right flex-auto d-none d-md-block" src="images/placeholder.png" width="250" alt="Card image cap">
+          </div>
+
+          <div class="card flex-md-row mb-4 box-shadow h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <strong class="d-inline-block mb-2 text-primary">Rally</strong>
+              <h3 class="mb-0">
+                <a class="text-dark" href="#">Stop the Tyranny</a>
+              </h3>
+              <div class="mb-1 text-muted">April 21, 11am</div>
+              <p class="card-text mb-auto">Concord Indivisible is organizing a Patriots Day Stop the Tyranny Rally as part of a weekend of events marking the 250th anniversary of the 
+                American Revolution. Invited guests include national leaders of Indivisible and the ACLU, fired USAID workers, and members of the MA Congressional delegation. 
+                <strong>Location: </strong>On the steps of First Parish Church, 20 Lexington Road, Concord. 
+                No further details yet. Given all the attention being paid to the 250th, the rally has the potential to be a major gathering with national press.</p> 
+              </div>
+              <img class="card-img-right flex-auto d-none d-md-block" src="images/placeholder.png" width="250" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+      
     </section>
     <section id="scrollspyMedia">
       <h2>Media</h2>
@@ -79,7 +143,9 @@
     </section>
   </main>
   <footer>
-    <span class="copyright">&copy; 2025 BVOCAL</span>
+    <div class="container">
+      <span class="copyright">&copy; 2025 BVOCAL</span>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
